@@ -1,4 +1,4 @@
-import SundayAfterNoon from "../assets/A Sunday Afternoon on the Island of La Grande Jatte .jpeg";
+import WaterLilies from "../assets/water.jpeg";
 import AmericanGothic from "../assets/American Gothic.jpg";
 import PearlEarring from "../assets/Girl with a Pearl Earring .jpeg";
 import StarryNight from "../assets/Starry Night.jpeg";
@@ -7,14 +7,14 @@ import TheScream from "../assets/The Scream.jpeg";
 import Mother from "../assets/Whistlers Mother.jpeg";
 import TheNightWatch from "../assets/The Night Watch.jpeg";
 import TheKiss from "../assets/The Kiss.jpeg";
-import ThePersistenceOfMemory from "../assets/The Persistence of Memory .jpeg";
+import TheSonOfMan from "../assets/thesonofman.jpeg";
 
 export const nftList = [
   {
-    name: "A Sunday Afternoon on the Island of La Grande Jatte",
-    image: SundayAfterNoon,
+    name: "Water Lilies",
+    image: WaterLilies,
     collection: "Art",
-    artist: "Georges Seurat",
+    artist: "Claude Monet",
     id: 1,
     pay1: 0.6,
   },
@@ -68,10 +68,10 @@ export const nftList = [
     pay1: 1.25,
   },
   {
-    name: "The Persistence Of Memory",
-    image: ThePersistenceOfMemory,
+    name: "The Son of Man",
+    image: TheSonOfMan,
     collection: "Art",
-    artist: "Salvador Dalí",
+    artist: "Rene Magrittees",
     id: 8,
     pay1: 0.8,
   },

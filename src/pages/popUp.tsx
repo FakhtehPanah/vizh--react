@@ -1,8 +1,6 @@
-import React, { ReactNode} from 'react'
 import progress from '../assets/progress Activity Icon.svg'
 import Check from '../assets/Check Sign.svg'
 
-type myProps = {}
 
 const popUp = ({status} : {status: boolean}) => {
   return (

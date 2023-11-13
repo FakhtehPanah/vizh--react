@@ -12,7 +12,7 @@ function Footer() {
          ml-[131px] mt-[110px] "
         />
         <div
-          className="w-[38.5rem] ml-[300px]
+          className="w-[38.5rem] ml-[200px]
        mt-[110px]"
         >
           <div className='font-normal text-3xl font-["Inter"] text-white'>
@@ -35,27 +35,27 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mr-[300px] ">
-       <div className=" grid grid-cols-3 w-[850px] h-[280px] text-[#F8F8F8] mt-[105px] mb-[80px] ml-[131px]  items-start "> 
+      <div className="flex justify-center mr-[550px] ">
+        <div className=" grid grid-cols-3 w-[850px] text-[#F8F8F8] mt-[105px] mb-[80px] ml-[131px]  items-start ">
           <div className="font-FoundryMonoline-bold">Mintii Account</div>
           <div className="font-FoundryMonoline-bold">Collections</div>
           <div className="font-FoundryMonoline-bold">About Us</div>
-        <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2  font-FoundryMonoline-regular">
-          <Link to="/profile"> Profile </Link>
-          <Link to="/setting">Setting</Link>
-          <Link to="/privacy-policy">Privacy policy</Link>
-          <Link to="/terms-condition">Terms and condition</Link>
+          <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2  font-FoundryMonoline-regular">
+            <Link to="/profile"> Profile </Link>
+            <Link to="/setting">Setting</Link>
+            <Link to="/privacy-policy">Privacy policy</Link>
+            <Link to="/terms-condition">Terms and condition</Link>
+          </div>
+          <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular">
+            <Link to="/mint-nft">Mint NFT</Link>
+            <Link to="buy-nft">Buy NFT</Link>
+            <Link to="sell-nft">Sell NFT</Link>
+          </div>
+          <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular ">
+            <Link to="mintii">Mintii</Link>
+            <Link to="artists">Artists</Link>
+          </div>
         </div>
-        <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular">
-          <Link to="/mint-nft">Mint NFT</Link>
-          <Link to="buy-nft">Buy NFT</Link>
-          <Link to="sell-nft">Sell NFT</Link>
-        </div>
-        <div className="text-[#5B5B5B] grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular ">
-          <Link to="mintii">Mintii</Link>
-          <Link to="artists">Artists</Link>
-        </div>
-      </div>
       </div>
     </div>
   );
