@@ -1,13 +1,13 @@
-import WaterLilies from "../assets/water.jpeg";
-import AmericanGothic from "../assets/American Gothic.jpg";
-import PearlEarring from "../assets/Girl with a Pearl Earring .jpeg";
-import StarryNight from "../assets/Starry Night.jpeg";
-import TheMonaLisa from "../assets/The Mona Lisa.jpeg";
-import TheScream from "../assets/The Scream.jpeg";
-import Mother from "../assets/Whistlers Mother.jpeg";
-import TheNightWatch from "../assets/The Night Watch.jpeg";
-import TheKiss from "../assets/The Kiss.jpeg";
-import TheSonOfMan from "../assets/thesonofman.jpeg";
+import WaterLilies from "../assets/Cards/water.jpeg";
+import AmericanGothic from "../assets/Cards/American Gothic.jpg";
+import PearlEarring from "../assets/Cards/Girl with a Pearl Earring .jpeg";
+import StarryNight from "../assets/Cards/Starry Night.jpeg";
+import TheMonaLisa from "../assets/Cards/The Mona Lisa.jpeg";
+import TheScream from "../assets/Cards/The Scream.jpeg";
+import Mother from "../assets/Cards/Whistlers Mother.jpeg";
+import TheNightWatch from "../assets/Cards/The Night Watch.jpeg";
+import TheKiss from "../assets/Cards/The Kiss.jpeg";
+import TheSonOfMan from "../assets/Cards/thesonofman.jpeg";
 
 export const nftList = [
   {

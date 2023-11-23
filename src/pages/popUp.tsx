@@ -1,5 +1,5 @@
-import progress from '../assets/progress Activity Icon.svg'
-import Check from '../assets/Check Sign.svg'
+import progress from '../assets/Logo/progress Activity Icon.svg'
+import Check from '../assets/Logo/Check Sign.svg'
 
 
 const popUp = ({status} : {status: boolean}) => {

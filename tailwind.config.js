@@ -6,10 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      },
       fontFamily: {
-        'FoundryMonoline-regular': ['FoundryMonoline-Regular'],
-        'FoundryMonoline-bold': ['FoundryMonoline-Bold']
-      }
+        'regular': ['FoundryMonoline-Regular'],
+        'bold': ['FoundryMonoline-Bold'],
+        'inter': ['Inter']
+      },
     },
   },
   plugins: [],

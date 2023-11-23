@@ -1,41 +1,30 @@
-import Logo from "../assets/logoheader.svg";
-import SearchIcon from "../assets/search.svg";
+import Logo from "../assets/Logo/headerLogo.png";
+import SearchIcon from "../assets/Logo/search.svg";
 import { Link } from "react-router-dom";
 
 function Header({ setSearchCard, searchCard }) {
   return (
-    <div className="font-FoundryMonoline-bold w-full h-[5.5rem] flex relative justify-between">
-      <Link to="/">
-        <img className="w-14 h-14 my-5 mx-12" src={Logo} alt="logo" />
-      </Link>
-      <div
-        className="flex justify-start items-center rounded-[40px] w-[30rem] h-10 mt-8 mr-auto ml-6 
-       bg-[#F5F5F5] "
-      >
-        <img
-          src={SearchIcon}
-          alt="search"
-          className="w-[1.5rem] h-[1.5rem] flex
-          ml-10"
-        />
-        <input
-          className="w-[30rem]
-            placeholder: text-gray-300 text-sm font-normal bg-transparent
-             placeholder:text-gray-300 outline-none ml-2"
-          placeholder="Search NFT, Artist, Exhibition..."
-          type="text"
+    <header className="max-w md:flex flex-row items-center justify-between font-bold py-6">
+      <div className="flex w-full items-center">
+        <Link to='/'>
+          <img src={Logo} className="w-14 h-14 mx-10"/>
+        </Link>
+        <div className="flex items-center justify-start bg-[#F5F5F5] rounded-[40px] h-10 w-[30rem] ml-6 mr-auto ">
+          <img src={SearchIcon} className="pl-6 pr-5" />
+          <input type="text" 
           value={searchCard}
           onChange={(e) => {
-            setSearchCard(e.target.value);
+            setSearchCard(e.target.value)
           }}
-        />
+          placeholder="Search NFT, Artist, Exhibition..."
+           className="w-full outline-none bg-transparent text-[#D2D2D2] py-2.5 font-normal text-sm"/>
+        </div>
       </div>
-      <div className="">
-        <button className="w-[11.06rem] h-12 bg-black rounded-[40px] mt-8 mr-12 ">
-          <div className="text-white font-normal ">Connect Wallet</div>
-        </button>
-      </div>
-    </div>
+      <button className="bg-black hover:bg-neutral-900	 text-white rounded-[40px] h-12 w-[30rem] md:w-44 text-sm ml-40 md:mx-16 ">
+        Connect Wallet
+      </button>
+        
+    </header>
   );
 }
 
