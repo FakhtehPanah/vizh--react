@@ -33,43 +33,25 @@ function Footer() {
           <div>
             <h3 className="text-white text-xl font-bold mb-1 ">Mintii Account</h3>
             <ul className="text-[#5B5B5B] text-lg font-regular my-3">
-              <li className="hover:text-[#BFBFBF]">
-                <a>Profile</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Setting</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Privacy Policy</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Terms and Condition</a>
-              </li>
+              <li className="hover:text-[#BFBFBF]">Profile</li>
+              <li className="hover:text-[#BFBFBF]">Setting</li>
+              <li className="hover:text-[#BFBFBF]">Privacy Policy</li>
+              <li className="hover:text-[#BFBFBF]">Terms and Condition</li>
             </ul>
           </div>
           <div className="">
             <h3 className="text-xl text-[#BFBFBF] font-bold mb-1 ">Collections</h3>
             <ul className="text-[#5B5B5B] text-lg font-regular my-3">
-              <li className="hover:text-[#BFBFBF]">
-                <a>Mint NFT</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Buy NFT</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Sell NFT</a>
-              </li>
+              <li className="hover:text-[#BFBFBF]">Mint NFT</li>
+              <li className="hover:text-[#BFBFBF]">Buy NFT</li>
+              <li className="hover:text-[#BFBFBF]">Sell NFT</li>
             </ul>
           </div>
           <div>  
             <h3 className="text-xl text-[#F8F8F8] font-bold mb-1 ">About Us</h3>
             <ul className="text-[#5B5B5B] text-lg font-regular my-3">
-              <li className="hover:text-[#BFBFBF]">
-                <a>Mintii</a>
-              </li>
-              <li className="hover:text-[#BFBFBF]">
-                <a>Artists</a>
-              </li>
+              <li className="hover:text-[#BFBFBF]">Mintii</li>
+              <li className="hover:text-[#BFBFBF]">Artists</li>
             </ul>
           </div>
         </div>
