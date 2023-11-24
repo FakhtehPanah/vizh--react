@@ -3,61 +3,78 @@ import Logo from "../assets/Logo/footerLogo.png";
 
 function Footer() {
   return (
-    <div className="w-full bg-bgfooter absolute ">
-      <div className="flex">
-        <img
-          src={Logo}
-          alt="logo"
-          className="w-[10.5rem] h-[10.3rem] 
-         ml-[131px] mt-[110px] "
-        />
-        <div
-          className="w-[38.5rem] ml-[200px]
-       mt-[125px]"
-        >
-          <div className='font-normal text-3xl text-white'>
-            Become an Early Adopter
-          </div>
-          <div className="pt-4 items-end flex justify-between ">
-            <input
-              className='border-b-2 font-normal placeholder:text-textfooter text-sm bg-transparent 
-                outline-none border-bordercolor
-                w-[26.5rem] h-[43px]'
+    <footer className="max-w py-10 bg-black">
+      <div className=" md:px-32">
+        <div className=" flex flex-col items-center 
+        justify-between md:flex-row md:mt-8 ">
+          <Link to='/' >
+            <img src={Logo} alt="logo" className="w-24 h-24 md:h-44 md:w-44"/>
+          </Link>
+          {/* form */}
+          <div className="flex flex-col font-normal font-inter md:pr-[22rem]">
+            <h2 className="text-white mt-4 md:pt-8 text-base md:text-2xl">Become an Early Adopter</h2>
+            <form className="flex flex-col md:items-center md:w-full
+             justify-between md:flex-row mt-8 ">
+              <input type="email"
               placeholder="Enter your Email-Address"
-              type="text"
-            />
-            <button
-              className=' w-44 h-14 bg-greenbtn rounded-full 
-           text-black text-xl '
-            >
-              Submit
-            </button>
+              className="bg-transparent text-sm
+               text-[#505050] placeholder:text-[#505050]
+                border-b-2 border-[#505050] outline-none  focus:border-gray-600
+                 md:mb-7 w-full h-12" />
+                   <button className="text-black bg-[#93D39B]
+                 md:ml-24 md:py-2 md:px-10 hover:bg-green-100 
+                md:h-auto md:w-auto w-44 md:mb-7 h-14 rounded-[40px] mt-2">
+                submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="font-normal  md:grid-cols-3 md:mt-10 grid grid-cols-2 ml-10 mt-8">
+          <div>
+            <h3 className="text-white text-xl font-bold mb-1 ">Mintii Account</h3>
+            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+              <li className="hover:text-[#BFBFBF]">
+                <a>Profile</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Setting</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Privacy Policy</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Terms and Condition</a>
+              </li>
+            </ul>
+          </div>
+          <div className="">
+            <h3 className="text-xl text-[#BFBFBF] font-bold mb-1 ">Collections</h3>
+            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+              <li className="hover:text-[#BFBFBF]">
+                <a>Mint NFT</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Buy NFT</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Sell NFT</a>
+              </li>
+            </ul>
+          </div>
+          <div>  
+            <h3 className="text-xl text-[#F8F8F8] font-bold mb-1 ">About Us</h3>
+            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+              <li className="hover:text-[#BFBFBF]">
+                <a>Mintii</a>
+              </li>
+              <li className="hover:text-[#BFBFBF]">
+                <a>Artists</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div className="flex justify-center mr-[550px] ">
-        <div className=" grid grid-cols-3 w-[850px] text-premitiveWhite mt-[105px] mb-[80px] ml-[131px]  items-start ">
-          <div className="font-FoundryMonoline-bold">Mintii Account</div>
-          <div className="font-FoundryMonoline-bold">Collections</div>
-          <div className="font-FoundryMonoline-bold">About Us</div>
-          <div className="text-itemfooter grid grid-rows-4 gap-3 pt-2  font-FoundryMonoline-regular">
-            <Link to="/profile"> Profile </Link>
-            <Link to="/setting">Setting</Link>
-            <Link to="/privacy-policy">Privacy policy</Link>
-            <Link to="/terms-condition">Terms and condition</Link>
-          </div>
-          <div className="text-itemfooter grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular">
-            <Link to="/mint-nft">Mint NFT</Link>
-            <Link to="buy-nft">Buy NFT</Link>
-            <Link to="sell-nft">Sell NFT</Link>
-          </div>
-          <div className="text-itemfooter grid grid-rows-4 gap-3 pt-2 font-FoundryMonoline-regular ">
-            <Link to="mintii">Mintii</Link>
-            <Link to="artists">Artists</Link>
-          </div>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 }
 
