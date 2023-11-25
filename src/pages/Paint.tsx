@@ -3,6 +3,8 @@ import checkIcon from "../assets/Logo/Check Sign.svg";
 import Popup from "../pages/popUp";
 import { useNavigate, useParams } from "react-router-dom";
 import { nftList } from "../helpers/NftList";
+import RoyalityLogo from '../assets/Logo/Royaltie.svg'
+import ETH from '../assets/Logo/eth.svg'
 
 
 const Paint = () => {
@@ -25,76 +27,41 @@ const Paint = () => {
   };
 
   return (
-    <div className="bg-white mt-[90px]  justify-center mb-[70px] flex">
+    <div className=" justify-center  md:flex md:justify-between grid grid-row-2">
       {popUp && <Popup status={status} />}
-      <div className="w-[543px] h-[671px] mr-5 ml-9 rounded-2xl bg-gray0">
-        <div className="mt-[39px] ml-[49px]">
-          <div className="flex text-[28px]">
-            <div className="font-bold">
-              From "{nft.collection}"
-            </div>
-            <img src={checkIcon} className="w-[18.9px] h-[18.9px] mt-3 ml-2 " />
-          </div>
-          <div className="mt-6">
-            <div className="text-[40px] font-bold">
-              {nft.name}
-            </div>
-            <div className="flex">
-              <div className="text-[24px] font-bold">
-                Royalities
-              </div>
-              <div className="text-[20px] mt-1 ml-2 bg-greenbtn rounded-lg w-[73px] h-[30px] pl-4">
-                2.5%
-              </div>
-            </div>
-            <div className="w-[382px] h-[68px] text-gray3 text-[20px] mt-[24px] font-regular">
-              You are about to buy this artwork from {nft.collection}{" "}
-              collection.
-            </div>
-            <div className="w-[285px] h-[185px] mt-[40px] font-regular">
-              <div className="flex">
-                <div className="text-base mt-2 ">Floor Price</div>
-                <div className="flex text-sm bg-white rounded-2xl w-[165px] h-[43px] justify-center items-center ml-[40px]">
-                  <div className="mr-[35px]">0.25</div>
-                  <div className="w-[58px] h-[26px] bg-greenbtn rounded-2xl justify-center py-1 pl-4 items-center">
-                    ETH
-                  </div>
-                </div>
-              </div>
-              <div className="flex mt-[25px]">
-                <div className="text-base mt-2 ">Mintii fee</div>
-                <div className="flex text-sm  bg-white rounded-2xl w-[165px] h-[43px] justify-center items-center ml-[50px]">
-                  <div className="mr-[35px]">2.5%</div>
-                  <div className="w-[58px] h-[26px] bg-greenbtn rounded-2xl justify-center py-1 pl-4 items-center">
-                    ETH
-                  </div>
-                </div>
-              </div>
-              <div className="flex mt-[50px]">
-                <div className="text-base mt-2 ">You will pay</div>
-                <div className="flex text-sm bg-white rounded-2xl w-[165px] h-[43px] justify-center items-center ml-[30px]">
-                  <div className="mr-[35px]">0.27</div>
-                  <div className="w-[58px] h-[26px] bg-[#93D39B] rounded-2xl justify-center py-1 pl-4 items-center">
-                    ETH
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="w-auto mx-12 h-auto rounded-2xl md:my-20 my-10 bg-[#F5F5F5] ">
+       <div className="py-10 px-12 font-bold">
+         <div className="flex text-3xl ">From "{nft.collection}"
+          <img src={checkIcon} />
+         </div>
+          <div className="text-4xl mt-6">{nft.name}</div>
+          <div className="text-2xl mt-6 flex">Royalities
+          <img src={RoyalityLogo} className="ml-5 "/>
+         </div>
         </div>
-        <div></div>
-        <div className="bg-[#0C0C0C] shadow mt-12 rounded-full w-[421px] flex justify-center h-[70px] ml-14">
-          <button onClick={handlePurchase}>
-            <div className="text-premitiveWhite text-[34px] font-bold">
-              Submit Purchase
-            </div>
-          </button>
+        <div className="font-regular text-2xl ml-12 text-[#464646]">You are about to buy this artwork from {nft.collection} collection.</div>
+        <div className="flex items-center font-regular text-lg my-10 mx-12 ">
+          <p className="mr-16">Floor Price</p>
+          <p className="flex bg-white rounded-2xl items-center px-8 font-bold py-1">0.25
+          <img src={ETH} className=" px-3 ml-12  py-1 "/>
+          </p>
         </div>
-      </div>
-      <div className=" mr-[49px] pl-7 ml-6 ">
-        <img src={nft.image} className="rounded-2xl h-[671px] w-[720px]" />
-      </div>
-    </div>
+        <div className="flex items-center font-regular text-lg my-10 mx-12 ">
+          <p className="mr-16 ml-2">Mintii fee</p>
+          <p className="flex bg-white rounded-2xl items-center pl-10 h-10 font-bold py-1 w-[14.3rem]">0.25
+          </p>
+        </div>
+        <div className="flex items-center font-regular text-lg my-10 mx-12 ">
+          <p className="mr-16">You will pay</p>
+          <p className="flex bg-white rounded-2xl items-center px-8 font-bold py-1">0.25
+          <img src={ETH} className=" px-3 ml-12  py-1 "/>
+          </p>
+        </div>
+        <button onClick={handlePurchase} className="text-[#F8F8F8] hover:bg-neutral-900 bg-[#0C0C0C] rounded-full text-3xl font-bold py-3 px-12 ml-14 mb-10">Submit Purchase</button>
+        </div>
+        <img src={nft.image} className="rounded-2xl md:my-20 mx-12 mb-20 md:mr-20 h-auto w-[39.1rem] " />
+   </div>
+    
   );
 };
 
