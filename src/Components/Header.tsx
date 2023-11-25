@@ -20,7 +20,7 @@ function Header({ setSearchCard, searchCard }) {
            className="w-full outline-none bg-transparent text-[#D2D2D2] py-2.5 font-normal text-sm"/>
         </div>
       </div>
-      <button className="bg-black hover:bg-neutral-900	 text-white rounded-[40px] h-12 w-[30rem] md:w-44 text-sm ml-40 md:mx-16 ">
+      <button className="bg-black hover:bg-neutral-900 text-white rounded-[40px] h-12 w-auto md:p-0 px-16 md:w-44 text-sm ml-[12rem] md:mx-16 ">
         Connect Wallet
       </button>
         
