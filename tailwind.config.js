@@ -12,8 +12,8 @@ export default {
 
       },
       fontFamily: {
-        'regular': ['FoundryMonoline-Regular'],
-        'bold': ['FoundryMonoline-Bold'],
+        'Regular': ['Regular'],
+        'Bold': ['Bold'],
         'inter': ['Inter']
       },
     },

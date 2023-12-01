@@ -41,10 +41,10 @@ function Footer() {
         </div>
         <div className="font-normal md:grid-cols-3 md:mt-10 grid grid-cols-2 ml-10 mt-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-1 ">
+            <h3 className="text-white text-xl font-Bold mb-1 ">
               Mintii Account
             </h3>
-            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+            <ul className="text-[#5B5B5B] text-lg font-Regular my-3">
               <li className="hover:text-[#BFBFBF]">Profile</li>
               <li className="hover:text-[#BFBFBF]">Setting</li>
               <li className="hover:text-[#BFBFBF]">Privacy Policy</li>
@@ -52,18 +52,18 @@ function Footer() {
             </ul>
           </div>
           <div className="">
-            <h3 className="text-xl text-[#BFBFBF] font-bold mb-1 ">
+            <h3 className="text-xl text-[#BFBFBF] font-Bold mb-1 ">
               Collections
             </h3>
-            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+            <ul className="text-[#5B5B5B] text-lg font-Regular my-3">
               <li className="hover:text-[#BFBFBF]">Mint NFT</li>
               <li className="hover:text-[#BFBFBF]">Buy NFT</li>
               <li className="hover:text-[#BFBFBF]">Sell NFT</li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl text-[#F8F8F8] font-bold mb-1 ">About Us</h3>
-            <ul className="text-[#5B5B5B] text-lg font-regular my-3">
+            <h3 className="text-xl text-[#F8F8F8] font-Bold mb-1 ">About Us</h3>
+            <ul className="text-[#5B5B5B] text-lg font-Regular my-3">
               <li className="hover:text-[#BFBFBF]">Mintii</li>
               <li className="hover:text-[#BFBFBF]">Artists</li>
             </ul>

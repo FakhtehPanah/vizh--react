@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./pages/Home";
 import Paint from "./pages/Paint";
+import { ScrollTop } from "./Components/ScrollTop";
 import { useState } from "react";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home searchCard={searchCard} />} />
             <Route path="/paint/:id" element={<Paint />} />
           </Routes>
+          {/* <ScrollTop /> */}
           <Footer />
         </BrowserRouter>
       </div>
